@@ -78,12 +78,15 @@ h6 {
     -webkit-transition: .5s;
     transition: .5s; }
 
-#intro .container {
-  padding-top: 18vh; }
-  @media (min-width: 1024px) {
-    #intro .container {
-      padding-top: 38vh; } }
+ #intro .container {
+  margin-top: 40px;
+}
 
+@media (max-width: 668px) {
+  #intro .container {
+    margin: 30px;
+  }
+}
 #intro .h2 {
   font-size: 28px;
   font-weight: 400;
@@ -98,6 +101,14 @@ h6 {
   @media (min-width: 1024px) {
     #intro .h1 {
       font-size: 70px; } }
+  @media (min-width: 500px) and (max-width: 768px) {
+    #intro .h1 {
+      font-size: 50px; }
+  }
+  @media (max-width: 500px){
+    #intro .h1 {
+      font-size: 33px; }
+  }
 
 #intro #social {
   text-align: center;
@@ -114,6 +125,25 @@ h6 {
   @media (min-width: 1024px) {
     #intro #social {
       text-align: right; } }
+
+.social-nav {
+  position: fixed;
+    top: 0;
+    right: 3%;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+@media (max-width: 992px) {
+  .social-nav {
+    position: fixed;
+    top: 0;
+    right: 3%;
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+}
+
 
 #profile .container {
   padding-top: 12vh; }
@@ -182,11 +212,9 @@ h6 {
 #skills li {
   list-style: none; }
 
-#skills .container {
-  padding-top: 4vh; }
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     #skills .container {
-      padding-top: 8vh; } }
+      padding-bottom: 3vh; } }
   #skills .container .row {
     margin: 0 auto !important; }
 

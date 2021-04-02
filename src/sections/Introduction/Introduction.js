@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'react-grid-system';
+import {Navbar} from "reactstrap";
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import navLinks from '../../data/navlinks'
@@ -14,20 +15,22 @@ function Introduction() {
                 )
 
     return(
+        <>
             <Container>
+                <Navbar className="social-nav">
+                    <div id="social">
+                    {   navItems}
+                    </div>
+                </Navbar>
                 <Row>
-                    <Col>
-                        <div id="social">
-                            {navItems}
-                        </div>
-                        <div className="container">
-                            <h2 className="h2">Hello, my name is</h2>
-                            <h1><Typist className="h1" avgTypingDelay={100}>John Ian David :-)</Typist></h1>
-                            <a href={navLinks["social"]["github"]["url"]} target="_blank"><div class="button">View My Work</div></a>
-                        </div>
-                    </Col>
+                    <div id="intro" className="container">
+                        <h2 className="h2">Hello, my name is</h2>
+                        <h1><Typist className="h1" avgTypingDelay={100}>John Ian David :-)</Typist></h1>
+                        <a href={navLinks["social"]["github"]["url"]} target="_blank"><div class="button">View My Work</div></a>
+                    </div>
                 </Row>
             </Container>
+        </>
         )
 }
 

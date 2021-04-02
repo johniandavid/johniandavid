@@ -2,7 +2,7 @@ const navlinks = {
     social: {
         resume: {
             name: "Resume",
-            url: "//drive.google.com/file/d/1gHyRvN_lCkIMiFF3_266-H-m9W0BjsfB/view?usp=sharing"
+            url: "//docs.google.com/document/d/1Sm9blD3Qv6OikOS4Y858Ka894RW50SIjs5sW_fiM8ec/edit?usp=sharing"
         },
         linkedin: {
             name: "Linkedin",
